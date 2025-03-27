@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2tVste2cKm1Ik1Qqll0VLs6XdMK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Client.executor": "Run",
+    "Application.DesignPatterns.AbstractFactory.DbAbstractFactory.Driver.executor": "Run",
+    "Application.DesignPatterns.Builder.Client.executor": "Run",
+    "Application.DesignPatterns.Factory.DbFactory.Driver.executor": "Run",
+    "Application.DesignPatterns.Strategy.Client.executor": "Run",
+    "Application.Driver.executor": "Run",
+    "Application.LambdasClient.executor": "Run",
+    "Application.Multithreading.adderSubtractor.Driver.executor": "Run",
+    "Application.Multithreading.adderSubtractorWithSynchronised.Driver.executor": "Run",
+    "Application.StreamsClient.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ujjagupta/Desktop/Personal/JavaBackendBasics/src/Multithreading/adderSubtractorWithSynchronised",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Multithreading/adderSubtractorWithSynchronised" />
+      <recent name="$PROJECT_DIR$/src/Multithreading" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DesignPatterns.Strategy.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPatterns.Adapter.Client" />
+      <module name="JavaBackendBasics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPatterns.Adapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesignPatterns.AbstractFactory.DbAbstractFactory.Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPatterns.AbstractFactory.DbAbstractFactory.Driver" />
+      <module name="JavaBackendBasics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPatterns.AbstractFactory.DbAbstractFactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesignPatterns.Factory.DbFactory.Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPatterns.Factory.DbFactory.Driver" />
+      <module name="JavaBackendBasics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPatterns.Factory.DbFactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesignPatterns.Strategy.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPatterns.Strategy.Client" />
+      <module name="JavaBackendBasics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPatterns.Strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DesignPatterns.Factory.ShapeFactory.Driver" />
+      <module name="JavaBackendBasics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DesignPatterns.Factory.ShapeFactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DesignPatterns.Strategy.Client" />
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.DesignPatterns.AbstractFactory.DbAbstractFactory.Driver" />
+        <item itemvalue="Application.Driver" />
+        <item itemvalue="Application.DesignPatterns.Factory.DbFactory.Driver" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="" />
+      <created>1740448793833</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740448793833</updated>
+      <workItem from="1740448794758" duration="46000" />
+      <workItem from="1740448857468" duration="4772000" />
+      <workItem from="1740478787485" duration="110000" />
+      <workItem from="1740478914612" duration="1870000" />
+      <workItem from="1740553816074" duration="5557000" />
+      <workItem from="1740649782738" duration="3033000" />
+      <workItem from="1741687900002" duration="3693000" />
+      <workItem from="1741697454572" duration="3133000" />
+      <workItem from="1742107896391" duration="8361000" />
+      <workItem from="1742444718242" duration="5190000" />
+      <workItem from="1742467999188" duration="6459000" />
+      <workItem from="1742890142834" duration="428000" />
+      <workItem from="1742890587901" duration="4678000" />
+      <workItem from="1743059157078" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
