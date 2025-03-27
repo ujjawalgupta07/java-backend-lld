@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="" />
+    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,30 +31,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Client.executor": "Run",
-    "Application.DesignPatterns.AbstractFactory.DbAbstractFactory.Driver.executor": "Run",
-    "Application.DesignPatterns.Builder.Client.executor": "Run",
-    "Application.DesignPatterns.Factory.DbFactory.Driver.executor": "Run",
-    "Application.DesignPatterns.Strategy.Client.executor": "Run",
-    "Application.Driver.executor": "Run",
-    "Application.LambdasClient.executor": "Run",
-    "Application.Multithreading.adderSubtractor.Driver.executor": "Run",
-    "Application.Multithreading.adderSubtractorWithSynchronised.Driver.executor": "Run",
-    "Application.StreamsClient.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ujjagupta/Desktop/Personal/JavaBackendBasics/src/Multithreading/adderSubtractorWithSynchronised",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DesignPatterns.AbstractFactory.DbAbstractFactory.Driver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DesignPatterns.Builder.Client.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DesignPatterns.Factory.DbFactory.Driver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DesignPatterns.Strategy.Client.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Driver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LambdasClient.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Multithreading.adderSubtractor.Driver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Multithreading.adderSubtractorWithSynchronised.Driver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StreamsClient.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ujjagupta/Desktop/Personal/JavaBackendBasics/src/Multithreading/adderSubtractorWithSynchronised&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Multithreading/adderSubtractorWithSynchronised" />
@@ -167,10 +167,24 @@
       <workItem from="1742890142834" duration="428000" />
       <workItem from="1742890587901" duration="4678000" />
       <workItem from="1743059157078" duration="33000" />
+      <workItem from="1743059213959" duration="328000" />
     </task>
+    <task id="LOCAL-00001" summary="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl">
+      <option name="closed" value="true" />
+      <created>1743059485608</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743059485608</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl" />
   </component>
 </project>
