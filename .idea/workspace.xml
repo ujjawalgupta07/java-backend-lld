@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl" />
+    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment=".">
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/enums/PlayerType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +50,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ujjagupta/Desktop/Personal/JavaBackendBasics/src/Multithreading/adderSubtractorWithSynchronised&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ujjagupta/Desktop/Personal/JavaBackendBasics/src/LLDCaseStudies/TicTacToe&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,11 +61,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe" />
       <recent name="$PROJECT_DIR$/src/Multithreading/adderSubtractorWithSynchronised" />
       <recent name="$PROJECT_DIR$/src/Multithreading" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DesignPatterns.Strategy.Client">
+  <component name="RunManager" selected="Application.LLDCaseStudies.TicTacToe.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DesignPatterns.Adapter.Client" />
       <module name="JavaBackendBasics" />
@@ -81,19 +86,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="DesignPatterns.AbstractFactory.DbAbstractFactory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DesignPatterns.Factory.DbFactory.Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DesignPatterns.Factory.DbFactory.Driver" />
-      <module name="JavaBackendBasics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DesignPatterns.Factory.DbFactory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,13 +119,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LLDCaseStudies.TicTacToe.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LLDCaseStudies.TicTacToe.Client" />
+      <module name="JavaBackendBasics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LLDCaseStudies.TicTacToe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LLDCaseStudies.TicTacToe.Client" />
         <item itemvalue="Application.DesignPatterns.Strategy.Client" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.DesignPatterns.AbstractFactory.DbAbstractFactory.Driver" />
         <item itemvalue="Application.Driver" />
-        <item itemvalue="Application.DesignPatterns.Factory.DbFactory.Driver" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +172,9 @@
       <workItem from="1742890142834" duration="428000" />
       <workItem from="1742890587901" duration="4678000" />
       <workItem from="1743059157078" duration="33000" />
-      <workItem from="1743059213959" duration="328000" />
+      <workItem from="1743059213959" duration="511000" />
+      <workItem from="1743682754875" duration="262000" />
+      <workItem from="1743683086595" duration="327000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl">
       <option name="closed" value="true" />
@@ -177,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743059485608</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=".">
+      <option name="closed" value="true" />
+      <created>1743059696649</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743059696649</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +200,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
