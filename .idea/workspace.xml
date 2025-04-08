@@ -4,21 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="Removing unwanted files">
+    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="TicTcToe logic impl">
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/FarthestSlotAllocationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/NearestSlotAllocationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/ParkingSlotAllocationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/RandomSlotAllocationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/ParkingLotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/TicketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/GateType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/PaymentMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/PaymentStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/VehicleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Floor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Gate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Operator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingLot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingSlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/ColumnWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/ColumnWinningStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/DiagonalWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/DiagonalWinningStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/RowWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/RowWinningStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/WinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/WinningStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -191,6 +198,7 @@
       <workItem from="1743767338713" duration="3897000" />
       <workItem from="1743917620884" duration="11126000" />
       <workItem from="1744021330415" duration="4939000" />
+      <workItem from="1744099343236" duration="6100000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl">
       <option name="closed" value="true" />
@@ -224,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743683614964</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="TicTcToe logic impl">
+      <option name="closed" value="true" />
+      <created>1744099361765</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744099361765</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +251,7 @@
     <MESSAGE value="." />
     <MESSAGE value="TicTacToe initial basic skeleton setup" />
     <MESSAGE value="Removing unwanted files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing unwanted files" />
+    <MESSAGE value="TicTcToe logic impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="TicTcToe logic impl" />
   </component>
 </project>
