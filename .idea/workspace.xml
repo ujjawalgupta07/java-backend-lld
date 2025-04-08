@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/controller/GameController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/enums/PlayerType.java" afterDir="false" />
+    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="Removing unwanted files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/models/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/ColumnWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/ColumnWinningStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/DiagonalWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/DiagonalWinningStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/RowWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/RowWinningStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/WinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/WinningStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +54,7 @@
     &quot;Application.DesignPatterns.Factory.DbFactory.Driver.executor&quot;: &quot;Run&quot;,
     &quot;Application.DesignPatterns.Strategy.Client.executor&quot;: &quot;Run&quot;,
     &quot;Application.Driver.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LLDCaseStudies.TicTacToe.Client.executor&quot;: &quot;Run&quot;,
     &quot;Application.LambdasClient.executor&quot;: &quot;Run&quot;,
     &quot;Application.Multithreading.adderSubtractor.Driver.executor&quot;: &quot;Run&quot;,
     &quot;Application.Multithreading.adderSubtractorWithSynchronised.Driver.executor&quot;: &quot;Run&quot;,
@@ -175,6 +187,10 @@
       <workItem from="1743059213959" duration="511000" />
       <workItem from="1743682754875" duration="262000" />
       <workItem from="1743683086595" duration="327000" />
+      <workItem from="1743683437703" duration="185000" />
+      <workItem from="1743767338713" duration="3897000" />
+      <workItem from="1743917620884" duration="11126000" />
+      <workItem from="1744021330415" duration="4939000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl">
       <option name="closed" value="true" />
@@ -192,7 +208,23 @@
       <option name="project" value="LOCAL" />
       <updated>1743059696649</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="TicTacToe initial basic skeleton setup">
+      <option name="closed" value="true" />
+      <created>1743683572775</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743683572775</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Removing unwanted files">
+      <option name="closed" value="true" />
+      <created>1743683614964</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743683614964</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +233,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="TicTacToe initial basic skeleton setup" />
+    <MESSAGE value="Removing unwanted files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing unwanted files" />
   </component>
 </project>

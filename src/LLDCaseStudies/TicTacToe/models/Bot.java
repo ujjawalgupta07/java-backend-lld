@@ -19,4 +19,9 @@ public class Bot extends Player {
         super(name, symbol, playerType);
         this.difficultyLevel = difficultyLevel;
     }
+
+    @Override
+    public Move makeMove() {
+        return null;
+    }
 }

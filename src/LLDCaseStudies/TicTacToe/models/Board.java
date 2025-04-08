@@ -34,13 +34,11 @@ public class Board {
 
         for(int i = 0; i < size; i++){
             List<Cell> cells = new ArrayList<>();
-
             for(int j = 0; j < size; j++){
                 cells.add(new Cell(i,j));
             }
             grid.add(cells);
         }
-
         return grid;
     }
 
@@ -49,6 +47,23 @@ public class Board {
         int column = cell.getColumn();
 
         grid.get(row).set(column, cell);
+    }
+
+    public void displayBoard(){
+        List<List<Cell>> grid = this.grid;
+        for(int i = 0; i < size; i++){
+            for(int j = 0; j < size; j++){
+                Cell cell = grid.get(i).get(j);
+                cell.displayCell();
+                if(j != size - 1){
+                    System.out.print(" | ");
+                }
+            }
+            System.out.println();
+            if(i != size - 1){
+                System.out.println("----------------");
+            }
+        }
     }
 
 }

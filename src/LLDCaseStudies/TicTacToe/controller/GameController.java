@@ -2,8 +2,9 @@ package LLDCaseStudies.TicTacToe.controller;
 
 import LLDCaseStudies.TicTacToe.enums.*;
 import LLDCaseStudies.TicTacToe.models.*;
+import LLDCaseStudies.TicTacToe.strategy.WinningStrategy;
+
 import java.util.List;
-import java.util.Scanner;
 
 public class GameController {
 
@@ -14,45 +15,76 @@ public class GameController {
         return game;
     }
 
-    public Game startGame(Game game) {
+    public void startGame(Game game) {
         System.out.println("Game has started");
         game.setGameState(GameState.IN_PROGRESS);
-        return game;
     }
 
-    public Game makeMove(Game game, Player player) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the Row you want to enter your symbol :: " + player.getSymbol().getSymbol());
-        int row = scanner.nextInt();
-        System.out.println("Enter the Column you want to enter your symbol :: ");
-        int col = scanner.nextInt();
-        Cell cell = new Cell(row, col, player);
-        Move move = new Move(player,cell);
-        List<Move> moves = game.getGameMoves();
-        moves.add(move);
+    public void makeMove(Game game) {
+        Player currPlayer = game.getPlayers().get(game.getNextPlayerIndex());
+        System.out.println("It's " + currPlayer.getName() + "'s turn. Please be ready with your move!");
+        Move move = currPlayer.makeMove();
+
+        if(!validateMove(game, move)){
+            System.out.println("Invalid Move! Please try again!");
+            return;
+        }
+        changeGameState(game, move);
+        if(checkWinner(game, move)){
+            game.setWinner(move.getPlayer());
+            game.setGameState(GameState.SUCCESS);
+        } else if (checkDraw(game)){
+            game.setGameState(GameState.DRAW);
+        }
+    }
+
+    public boolean checkWinner(Game game, Move move){
+        for(WinningStrategy winningStrategy : game.getWinningStrategies()){
+            if(winningStrategy.checkWinner(move,game.getBoard())){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean checkDraw(Game game){
+        return game.getGameMoves().size() == game.getBoard().getSize() * game.getBoard().getSize();
+    }
+
+    public boolean validateMove(Game game, Move move){
+        int row = move.getCell().getRow();
+        int col = move.getCell().getColumn();
+
+        if(row < 0 || row >= game.getBoard().getSize() || col < 0 || col >= game.getBoard().getSize()){
+            return false;
+        }
+
+        return game.getBoard().getGrid().get(row).get(col).getCellState().equals(CellState.EMPTY);
+    }
+
+    public void changeGameState(Game game, Move move) {
         Board board = game.getBoard();
-        board.addCellToBoard(cell);
-        displayBoard(game);
-        return game;
+        board.addCellToBoard(move.getCell());
+
+        int row = move.getCell().getRow();
+        int col = move.getCell().getColumn();
+
+        Cell cellToChange = board.getGrid().get(row).get(col);
+        cellToChange.setCellState(CellState.FILLED);
+        cellToChange.setSymbol(move.getPlayer().getSymbol());
+
+        move.setCell(cellToChange);
+        game.getGameMoves().add(move);
+
+        int nextPlayerIndex = game.getNextPlayerIndex();
+        nextPlayerIndex++;
+        game.setNextPlayerIndex(nextPlayerIndex % game.getPlayers().size());
+
     }
 
     public void displayBoard(Game game) {
         Board board = game.getBoard();
-        List<List<Cell>> grid = board.getGrid();
-        for(int i = 0; i < grid.size(); i++){
-            for(int j = 0; j < grid.get(i).size(); j++){
-                Cell cell = grid.get(i).get(j);
-                Symbol symbol = cell.getSymbol();
-                System.out.print(symbol != null ? symbol.getSymbol() : " ");
-                if(j != board.getSize() - 1){
-                    System.out.print(" | ");
-                }
-            }
-            System.out.println();
-            if(i != board.getSize()-1){
-                System.out.println("----------------");
-            }
-        }
+        board.displayBoard();
     }
 
     public GameState checkGameState(Game game) {
