@@ -1,19 +1,29 @@
 package LLDCaseStudies.ParkingLot.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ParkingLot {
 
+    private int id;
     List<Gate> gates;
     List<Floor> floors;
     String address;
     int capacity;
 
-    public ParkingLot(List<Gate> gates, List<Floor> floors, String address, int capacity) {
+    public ParkingLot(int id, List<Gate> gates, List<Floor> floors, String address, int capacity) {
+        this.id = id;
         this.gates = gates;
         this.floors = floors;
         this.address = address;
         this.capacity = capacity;
+    }
+
+    public ParkingLot(String address, int capacity) {
+        this.address = address;
+        this.capacity = capacity;
+        this.gates = new ArrayList<>();
+        this.floors = new ArrayList<>();
     }
 
     public List<Gate> getGates() {
@@ -46,5 +56,13 @@ public class ParkingLot {
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

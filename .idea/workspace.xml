@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="TicTcToe logic impl">
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/FarthestSlotAllocationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/NearestSlotAllocationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/ParkingSlotAllocationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/RandomSlotAllocationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/ParkingLotController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/TicketController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/GateType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/PaymentMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/VehicleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Floor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Gate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingLot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingSlot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Vehicle.java" afterDir="false" />
+    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="Parking lot basic skeleton code">
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/service/impl/ParkingLotServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/service/interfaces/ParkingLotService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/ParkingLotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/ParkingLotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingLot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +182,9 @@
       <workItem from="1743767338713" duration="3897000" />
       <workItem from="1743917620884" duration="11126000" />
       <workItem from="1744021330415" duration="4939000" />
-      <workItem from="1744099343236" duration="6100000" />
+      <workItem from="1744099343236" duration="7258000" />
+      <workItem from="1744126689812" duration="284000" />
+      <workItem from="1744164504685" duration="976000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl">
       <option name="closed" value="true" />
@@ -240,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744099361765</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Parking lot basic skeleton code">
+      <option name="closed" value="true" />
+      <created>1744111587123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744111587123</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +246,7 @@
     <MESSAGE value="TicTacToe initial basic skeleton setup" />
     <MESSAGE value="Removing unwanted files" />
     <MESSAGE value="TicTcToe logic impl" />
-    <option name="LAST_COMMIT_MESSAGE" value="TicTcToe logic impl" />
+    <MESSAGE value="Parking lot basic skeleton code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parking lot basic skeleton code" />
   </component>
 </project>

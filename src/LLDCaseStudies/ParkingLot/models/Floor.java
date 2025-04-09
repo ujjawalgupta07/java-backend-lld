@@ -2,6 +2,7 @@ package LLDCaseStudies.ParkingLot.models;
 
 import LLDCaseStudies.ParkingLot.enums.Status;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Floor {
@@ -12,6 +13,12 @@ public class Floor {
 
     public Floor(List<ParkingSlot> slots, int number, Status floorStatus) {
         this.slots = slots;
+        this.number = number;
+        this.floorStatus = floorStatus;
+    }
+
+    public Floor(int number, Status floorStatus) {
+        this.slots = new ArrayList<>();
         this.number = number;
         this.floorStatus = floorStatus;
     }

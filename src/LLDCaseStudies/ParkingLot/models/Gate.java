@@ -8,10 +8,14 @@ public class Gate {
     private Operator operator;
     private GateType gateType;
 
-    public Gate(String number, Operator operator, GateType gateType) {
+    public Gate(String number, GateType gateType) {
         this.number = number;
-        this.operator = operator;
         this.gateType = gateType;
+    }
+
+    public Gate(String number, Operator operator, GateType gateType) {
+        this(number, gateType);
+        this.operator = operator;
     }
 
     public String getNumber() {

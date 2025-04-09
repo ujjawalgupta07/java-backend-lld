@@ -5,13 +5,11 @@ public class Operator {
     private String name;
     private int id;
     private int age;
-    private Gate dutyGate;
 
-    public Operator(String name, int id, int age, Gate dutyGate) {
+    public Operator(String name, int id, int age) {
         this.name = name;
         this.id = id;
         this.age = age;
-        this.dutyGate = dutyGate;
     }
 
     public String getName() {
@@ -38,11 +36,4 @@ public class Operator {
         this.age = age;
     }
 
-    public Gate getDutyGate() {
-        return dutyGate;
-    }
-
-    public void setDutyGate(Gate dutyGate) {
-        this.dutyGate = dutyGate;
-    }
 }
