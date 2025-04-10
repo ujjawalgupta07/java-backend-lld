@@ -5,26 +5,16 @@ import LLDCaseStudies.ParkingLot.enums.PaymentStatus;
 
 public class Payment {
 
-    private int id;
     private int amount;
     private String date;
     private PaymentStatus status;
     private PaymentMode mode;
 
-    public Payment(int id, int amount, String date, PaymentStatus status, PaymentMode mode) {
-        this.id = id;
+    public Payment(int amount, String date, PaymentStatus status, PaymentMode mode) {
         this.amount = amount;
         this.date = date;
         this.status = status;
         this.mode = mode;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public int getAmount() {

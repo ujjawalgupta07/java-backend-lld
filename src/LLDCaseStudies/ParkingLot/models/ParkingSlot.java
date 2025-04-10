@@ -3,15 +3,15 @@ package LLDCaseStudies.ParkingLot.models;
 import LLDCaseStudies.ParkingLot.enums.Status;
 import LLDCaseStudies.ParkingLot.enums.VehicleType;
 
-public class ParkingSlot {
+public class ParkingSlot extends BaseModel{
 
     private String number;
-    private VehicleType supportType;
+    private VehicleType allowedVehicleType;
     private Status slotStatus;
 
-    public ParkingSlot(String number, VehicleType supportType, Status slotStatus) {
+    public ParkingSlot(String number, VehicleType allowedVehicleType, Status slotStatus) {
         this.number = number;
-        this.supportType = supportType;
+        this.allowedVehicleType = allowedVehicleType;
         this.slotStatus = slotStatus;
     }
 
@@ -24,11 +24,11 @@ public class ParkingSlot {
     }
 
     public VehicleType getSupportType() {
-        return supportType;
+        return allowedVehicleType;
     }
 
-    public void setSupportType(VehicleType supportType) {
-        this.supportType = supportType;
+    public void setSupportType(VehicleType allowedVehicleType) {
+        this.allowedVehicleType = allowedVehicleType;
     }
 
     public Status getSlotStatus() {

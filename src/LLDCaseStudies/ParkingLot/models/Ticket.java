@@ -1,29 +1,18 @@
 package LLDCaseStudies.ParkingLot.models;
 
-public class Ticket {
-
-    private int id;
+public class Ticket extends BaseModel{
     private Vehicle vehicle;
     private ParkingSlot parkingSlot;
     private String entryTime;
     private Gate gate;
     private Operator operator;
 
-    public Ticket(int id, Vehicle vehicle, ParkingSlot parkingSlot, String entryTime, Gate gate, Operator operator) {
-        this.id = id;
+    public Ticket( Vehicle vehicle, ParkingSlot parkingSlot, String entryTime, Gate gate, Operator operator) {
         this.vehicle = vehicle;
         this.parkingSlot = parkingSlot;
         this.entryTime = entryTime;
         this.gate = gate;
         this.operator = operator;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public Vehicle getVehicle() {

@@ -3,16 +3,14 @@ package LLDCaseStudies.ParkingLot.models;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ParkingLot {
+public class ParkingLot extends BaseModel{
 
-    private int id;
     List<Gate> gates;
     List<Floor> floors;
     String address;
     int capacity;
 
-    public ParkingLot(int id, List<Gate> gates, List<Floor> floors, String address, int capacity) {
-        this.id = id;
+    public ParkingLot(List<Gate> gates, List<Floor> floors, String address, int capacity) {
         this.gates = gates;
         this.floors = floors;
         this.address = address;
@@ -58,11 +56,4 @@ public class ParkingLot {
         this.capacity = capacity;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 }

@@ -2,7 +2,7 @@ package LLDCaseStudies.ParkingLot.models;
 
 import LLDCaseStudies.ParkingLot.enums.VehicleType;
 
-public class Vehicle {
+public class Vehicle extends BaseModel{
 
     private String vehicleNumber;
     private String ownerName;

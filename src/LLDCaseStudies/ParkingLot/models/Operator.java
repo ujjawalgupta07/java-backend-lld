@@ -1,14 +1,12 @@
 package LLDCaseStudies.ParkingLot.models;
 
-public class Operator {
+public class Operator extends BaseModel{
 
     private String name;
-    private int id;
     private int age;
 
-    public Operator(String name, int id, int age) {
+    public Operator(String name, int age) {
         this.name = name;
-        this.id = id;
         this.age = age;
     }
 

@@ -5,19 +5,19 @@ import LLDCaseStudies.ParkingLot.enums.Status;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Floor {
+public class Floor extends BaseModel{
 
     private List<ParkingSlot> slots;
-    int number;
+    private String number;
     private Status floorStatus;
 
-    public Floor(List<ParkingSlot> slots, int number, Status floorStatus) {
+    public Floor(List<ParkingSlot> slots, String number, Status floorStatus) {
         this.slots = slots;
         this.number = number;
         this.floorStatus = floorStatus;
     }
 
-    public Floor(int number, Status floorStatus) {
+    public Floor(String number, Status floorStatus) {
         this.slots = new ArrayList<>();
         this.number = number;
         this.floorStatus = floorStatus;
@@ -31,11 +31,11 @@ public class Floor {
         this.slots = slots;
     }
 
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

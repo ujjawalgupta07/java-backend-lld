@@ -22,10 +22,10 @@ public class Client {
         gates.add(new Gate("1A", entryGateOperator, GateType.ENTRY));
         gates.add(new Gate("2A", exitGateOperator, GateType.EXIT));
 
-        floors.add(new Floor(0, Status.VACANT));
-        floors.add(new Floor(1, Status.VACANT));
-        floors.add(new Floor(2, Status.VACANT));
-        floors.add(new Floor(3, Status.VACANT));
+        floors.add(new Floor("0", Status.VACANT));
+        floors.add(new Floor("1", Status.VACANT));
+        floors.add(new Floor("2", Status.VACANT));
+        floors.add(new Floor("3", Status.VACANT));
 
         parkingLot.setGates(gates);
         parkingLot.setFloors(floors);

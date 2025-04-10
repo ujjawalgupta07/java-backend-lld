@@ -2,7 +2,7 @@ package LLDCaseStudies.ParkingLot.models;
 
 import LLDCaseStudies.ParkingLot.enums.GateType;
 
-public class Gate {
+public class Gate extends BaseModel {
 
     private String number;
     private Operator operator;
