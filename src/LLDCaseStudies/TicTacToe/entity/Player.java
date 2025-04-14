@@ -1,18 +1,17 @@
-package LLDCaseStudies.TicTacToe.models;
+package LLDCaseStudies.TicTacToe.entity;
 
-
-import LLDCaseStudies.TicTacToe.enums.PlayerType;
+import LLDCaseStudies.TicTacToe.enums.PlayerTypes;
 
 public abstract class Player {
 
     private String name;
     private Symbol symbol;
-    private PlayerType playerType;
+    private PlayerTypes playerType;
 
-    public Player(String name, Symbol symbol, PlayerType playerType) {
+    public Player(String name, Symbol symbol, PlayerTypes type) {
         this.name = name;
         this.symbol = symbol;
-        this.playerType = playerType;
+        this.playerType = type;
     }
 
     public String getName() {
@@ -31,13 +30,11 @@ public abstract class Player {
         this.symbol = symbol;
     }
 
-    public PlayerType getPlayerType() {
+    public PlayerTypes getPlayerType() {
         return playerType;
     }
 
-    public void setPlayerType(PlayerType playerType) {
+    public void setPlayerType(PlayerTypes playerType) {
         this.playerType = playerType;
     }
-
-    public abstract Move makeMove();
 }

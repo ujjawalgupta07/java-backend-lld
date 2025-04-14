@@ -1,21 +1,23 @@
-package LLDCaseStudies.TicTacToe.strategy;
+package LLDCaseStudies.TicTacToe.strategy.winningStrategy;
 
-import LLDCaseStudies.TicTacToe.models.Board;
-import LLDCaseStudies.TicTacToe.models.Cell;
-import LLDCaseStudies.TicTacToe.models.Move;
+import LLDCaseStudies.TicTacToe.entity.Board;
+import LLDCaseStudies.TicTacToe.entity.Cell;
+import LLDCaseStudies.TicTacToe.entity.Game;
+import LLDCaseStudies.TicTacToe.entity.Move;
 
 import java.util.HashMap;
 
-public class DiagonalWinningStrategy implements WinningStrategy{
+public class DiagonalWinningStrategy implements WinningStrategy {
 
-    private HashMap<Pair, HashMap<Character , Integer>> topLeftBottomRightDiagonal = new HashMap<>();
-    private HashMap<Pair, HashMap<Character , Integer>> topRightBottomLeftDiagonal = new HashMap<>();
+    private final HashMap<Pair, HashMap<String , Integer>> topLeftBottomRightDiagonal = new HashMap<>();
+    private final HashMap<Pair, HashMap<String , Integer>> topRightBottomLeftDiagonal = new HashMap<>();
 
     @Override
-    public boolean checkWinner(Move move, Board board) {
+    public boolean checkWinner(Game game, Move move) {
+        Board board = game.getBoard();
         Cell cell = move.getCell();
         int row = cell.getRow();
-        int column = cell.getColumn();
+        int column = cell.getCol();
         boolean tlbrDiagonal = false;
         boolean trblDiagonal = false;
         if(row == column){
@@ -34,13 +36,13 @@ public class DiagonalWinningStrategy implements WinningStrategy{
 
     private boolean checkWinnerInTopLeftDiagonal(Cell cell, Board board){
         int row = cell.getRow();
-        int column = cell.getColumn();
+        int column = cell.getCol();
 
         Pair pair = new Pair(row, column);
         if(!topLeftBottomRightDiagonal.containsKey(pair)){
             topLeftBottomRightDiagonal.put(pair, new HashMap<>());
         }
-        HashMap<Character , Integer> counts = topLeftBottomRightDiagonal.get(pair);
+        HashMap<String , Integer> counts = topLeftBottomRightDiagonal.get(pair);
 
         // check if freq of symbol is present or not
         if(!counts.containsKey(cell.getSymbol().getSymbol())){
@@ -57,13 +59,13 @@ public class DiagonalWinningStrategy implements WinningStrategy{
 
     private boolean checkWinnerInTopRightDiagonal(Cell cell, Board board){
         int row = cell.getRow();
-        int column = cell.getColumn();
+        int column = cell.getCol();
 
         Pair pair = new Pair(row, column);
         if(!topRightBottomLeftDiagonal.containsKey(pair)){
             topRightBottomLeftDiagonal.put(pair, new HashMap<>());
         }
-        HashMap<Character , Integer> counts = topRightBottomLeftDiagonal.get(pair);
+        HashMap<String , Integer> counts = topRightBottomLeftDiagonal.get(pair);
 
         // check if freq of symbol is present or not
         if(!counts.containsKey(cell.getSymbol().getSymbol())){
@@ -76,29 +78,6 @@ public class DiagonalWinningStrategy implements WinningStrategy{
             return true;
         }
         return false;
-    }
-
-//    private void createTLBRDiagonal(int size){
-//        for(int i = 0; i < size; i++){
-//            for(int j = 0; j < size; j++){
-//                if(i == j)
-//                    topLeftBottomRightDiagonal.put(new Pair(i, j), new HashMap<>());
-//            }
-//        }
-//    }
-//
-//    private void createTRBLDiagonal(int size){
-//        for(int i = 0; i < size; i++){
-//            for(int j = 0; j < size; j++){
-//                if(i + j == size - 1)
-//                    topRightBottomLeftDiagonal.put(new Pair(i, j), new HashMap<>());
-//            }
-//        }
-//    }
-
-    @Override
-    public void handleUndo(Move move, Board board) {
-
     }
 
     class Pair{

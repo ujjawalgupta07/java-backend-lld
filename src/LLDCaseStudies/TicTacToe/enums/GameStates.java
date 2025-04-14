@@ -1,10 +1,10 @@
 package LLDCaseStudies.TicTacToe.enums;
 
-public enum GameState {
+public enum GameStates {
 
     CREATED,
+    STARTED,
     IN_PROGRESS,
-    TERMINATED,
-    SUCCESS,
+    COMPLETED,
     DRAW
 }

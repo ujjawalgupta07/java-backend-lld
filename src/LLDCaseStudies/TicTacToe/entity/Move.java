@@ -1,4 +1,4 @@
-package LLDCaseStudies.TicTacToe.models;
+package LLDCaseStudies.TicTacToe.entity;
 
 public class Move {
 
@@ -25,6 +25,4 @@ public class Move {
     public void setCell(Cell cell) {
         this.cell = cell;
     }
-
-
 }

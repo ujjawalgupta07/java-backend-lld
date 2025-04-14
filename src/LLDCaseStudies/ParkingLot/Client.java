@@ -16,8 +16,8 @@ public class Client {
         List<Gate> gates = new ArrayList<>();
         List<Floor> floors = new ArrayList<>();
 
-        Operator entryGateOperator = new Operator("Akash", 123, 32);
-        Operator exitGateOperator = new Operator("Atul", 124, 35);
+        Operator entryGateOperator = new Operator("Akash", 123);
+        Operator exitGateOperator = new Operator("Atul", 124);
 
         gates.add(new Gate("1A", entryGateOperator, GateType.ENTRY));
         gates.add(new Gate("2A", exitGateOperator, GateType.EXIT));
