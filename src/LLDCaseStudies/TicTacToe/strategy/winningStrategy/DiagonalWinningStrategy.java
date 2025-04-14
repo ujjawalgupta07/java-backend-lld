@@ -9,8 +9,8 @@ import java.util.HashMap;
 
 public class DiagonalWinningStrategy implements WinningStrategy {
 
-    private final HashMap<Pair, HashMap<String , Integer>> topLeftBottomRightDiagonal = new HashMap<>();
-    private final HashMap<Pair, HashMap<String , Integer>> topRightBottomLeftDiagonal = new HashMap<>();
+    private final HashMap<String , Integer> topLeftBottomRightDiagonal = new HashMap<>();
+    private final HashMap<String , Integer> topRightBottomLeftDiagonal = new HashMap<>();
 
     @Override
     public boolean checkWinner(Game game, Move move) {
@@ -20,6 +20,7 @@ public class DiagonalWinningStrategy implements WinningStrategy {
         int column = cell.getCol();
         boolean tlbrDiagonal = false;
         boolean trblDiagonal = false;
+//        System.out.println("Checking winner in diagonals :::: ");
         if(row == column){
             tlbrDiagonal = checkWinnerInTopLeftDiagonal(cell, board);
         }
@@ -35,58 +36,32 @@ public class DiagonalWinningStrategy implements WinningStrategy {
     }
 
     private boolean checkWinnerInTopLeftDiagonal(Cell cell, Board board){
-        int row = cell.getRow();
-        int column = cell.getCol();
-
-        Pair pair = new Pair(row, column);
-        if(!topLeftBottomRightDiagonal.containsKey(pair)){
-            topLeftBottomRightDiagonal.put(pair, new HashMap<>());
-        }
-        HashMap<String , Integer> counts = topLeftBottomRightDiagonal.get(pair);
 
         // check if freq of symbol is present or not
-        if(!counts.containsKey(cell.getSymbol().getSymbol())){
-            counts.put(cell.getSymbol().getSymbol(), 0);
+        if(!topLeftBottomRightDiagonal.containsKey(cell.getSymbol().getSymbol())){
+            topLeftBottomRightDiagonal.put(cell.getSymbol().getSymbol(), 0);
         }
         // increase the frequency
-        counts.put(cell.getSymbol().getSymbol(), counts.get(cell.getSymbol().getSymbol()) + 1);
-
-        if(counts.get(cell.getSymbol().getSymbol()) == board.getSize()){
+        topLeftBottomRightDiagonal.put(cell.getSymbol().getSymbol(), topLeftBottomRightDiagonal.get(cell.getSymbol().getSymbol()) + 1);
+//        System.out.println(cell.getSymbol().getSymbol() + " ::: " + topLeftBottomRightDiagonal.get(cell.getSymbol().getSymbol()));
+        if(topLeftBottomRightDiagonal.get(cell.getSymbol().getSymbol()) == board.getSize()){
             return true;
         }
         return false;
     }
 
     private boolean checkWinnerInTopRightDiagonal(Cell cell, Board board){
-        int row = cell.getRow();
-        int column = cell.getCol();
-
-        Pair pair = new Pair(row, column);
-        if(!topRightBottomLeftDiagonal.containsKey(pair)){
-            topRightBottomLeftDiagonal.put(pair, new HashMap<>());
-        }
-        HashMap<String , Integer> counts = topRightBottomLeftDiagonal.get(pair);
-
         // check if freq of symbol is present or not
-        if(!counts.containsKey(cell.getSymbol().getSymbol())){
-            counts.put(cell.getSymbol().getSymbol(), 0);
+        if(!topRightBottomLeftDiagonal.containsKey(cell.getSymbol().getSymbol())){
+            topRightBottomLeftDiagonal.put(cell.getSymbol().getSymbol(), 0);
         }
         // increase the frequency
-        counts.put(cell.getSymbol().getSymbol(), counts.get(cell.getSymbol().getSymbol()) + 1);
+        topRightBottomLeftDiagonal.put(cell.getSymbol().getSymbol(), topRightBottomLeftDiagonal.get(cell.getSymbol().getSymbol()) + 1);
 
-        if(counts.get(cell.getSymbol().getSymbol()) == board.getSize()){
+        if(topRightBottomLeftDiagonal.get(cell.getSymbol().getSymbol()) == board.getSize()){
             return true;
         }
         return false;
     }
 
-    class Pair{
-        int dRow;
-        int dCol;
-
-        public Pair(int dRow, int dCol){
-            this.dRow = dRow;
-            this.dCol = dCol;
-        }
-    }
 }

@@ -10,6 +10,7 @@ import LLDCaseStudies.TicTacToe.enums.PlayerTypes;
 import LLDCaseStudies.TicTacToe.service.GameService;
 import LLDCaseStudies.TicTacToe.strategy.winningStrategy.ColumnWinningStrategy;
 import LLDCaseStudies.TicTacToe.strategy.winningStrategy.CompositeWinningStrategy;
+import LLDCaseStudies.TicTacToe.strategy.winningStrategy.DiagonalWinningStrategy;
 import LLDCaseStudies.TicTacToe.strategy.winningStrategy.RowWinningStrategy;
 
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class Client {
         CompositeWinningStrategy compositeWinningStrategy = new CompositeWinningStrategy();
         compositeWinningStrategy.addStrategy(new RowWinningStrategy());
         compositeWinningStrategy.addStrategy(new ColumnWinningStrategy());
+        compositeWinningStrategy.addStrategy(new DiagonalWinningStrategy());
 
         GameService gameService = new GameService(compositeWinningStrategy);
         GameController gameController = new GameController(gameService);
