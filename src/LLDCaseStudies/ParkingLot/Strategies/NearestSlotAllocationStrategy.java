@@ -18,6 +18,7 @@ public class NearestSlotAllocationStrategy implements ParkingSlotAllocationStrat
         for(Floor floor : floors){
             if(floor.getFloorStatus().equals(Status.VACANT) && floor.getSupportedVehicleType().equals(vehicle.getVehicleType())){
                 allotedFloor = floor;
+                break;
             }
         }
 

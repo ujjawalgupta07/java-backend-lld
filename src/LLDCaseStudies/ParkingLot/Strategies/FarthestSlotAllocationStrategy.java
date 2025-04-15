@@ -20,6 +20,7 @@ public class FarthestSlotAllocationStrategy implements ParkingSlotAllocationStra
             Floor floor = floors.get(i);
             if(floor.getFloorStatus().equals(Status.VACANT) && floor.getSupportedVehicleType().equals(vehicle.getVehicleType())){
                 allotedFloor = floor;
+                break;
             }
         }
 

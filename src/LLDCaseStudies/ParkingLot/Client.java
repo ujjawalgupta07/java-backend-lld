@@ -39,7 +39,7 @@ public class Client {
         parkingLot.setGates(gates);
         parkingLot.setFloors(floors);
 
-        Vehicle vehicle = new Vehicle("abc-123-12", "Ujjawal", VehicleType.FOUR_WHEELER);
+        Vehicle vehicle = new Vehicle("abc-123-12", "Ujjawal", VehicleType.TWO_WHEELER);
 
         Ticket issuedTicket = ticketController.issueTicket(parkingLot, gates.getFirst(), vehicle);
 

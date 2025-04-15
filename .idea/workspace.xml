@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="Impl diagonal winning strategy">
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/SlotAllocationStrategies.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/factory/SlotAllocationStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/service/TicketService.java" afterDir="false" />
+    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="Parking lot code impl">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/FarthestSlotAllocationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/FarthestSlotAllocationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/NearestSlotAllocationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/NearestSlotAllocationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/ParkingSlotAllocationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/ParkingSlotAllocationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/RandomSlotAllocationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/RandomSlotAllocationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/FloorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/GateController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/ParkingLotController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/TicketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Floor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Floor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingSlot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/service/impl/ParkingLotServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/service/interfaces/ParkingLotService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +216,7 @@
       <workItem from="1744631800205" duration="4715000" />
       <workItem from="1744711920751" duration="162000" />
       <workItem from="1744712129081" duration="144000" />
-      <workItem from="1744712282737" duration="2121000" />
+      <workItem from="1744712282737" duration="4404000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl">
       <option name="closed" value="true" />
@@ -322,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744624223893</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Parking lot code impl">
+      <option name="closed" value="true" />
+      <created>1744714624044</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1744714624044</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +330,8 @@
     <MESSAGE value="Extracting some attributes in a baseModel" />
     <MESSAGE value="BMS partial impl and Tic Tac Toe complete code" />
     <MESSAGE value="Impl diagonal winning strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Impl diagonal winning strategy" />
+    <MESSAGE value="Parking lot code impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parking lot code impl" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
