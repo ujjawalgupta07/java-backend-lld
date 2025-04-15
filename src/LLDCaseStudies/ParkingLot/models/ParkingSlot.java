@@ -9,10 +9,10 @@ public class ParkingSlot extends BaseModel{
     private VehicleType allowedVehicleType;
     private Status slotStatus;
 
-    public ParkingSlot(String number, VehicleType allowedVehicleType, Status slotStatus) {
+    public ParkingSlot(String number, VehicleType allowedVehicleType) {
         this.number = number;
         this.allowedVehicleType = allowedVehicleType;
-        this.slotStatus = slotStatus;
+        this.slotStatus = Status.VACANT;
     }
 
     public String getNumber() {
@@ -37,5 +37,20 @@ public class ParkingSlot extends BaseModel{
 
     public void setSlotStatus(Status slotStatus) {
         this.slotStatus = slotStatus;
+    }
+
+    public boolean isAvailable() {
+        if(this.slotStatus.equals(Status.VACANT)){
+            return true;
+        }
+        return false;
+    }
+
+    public void markOccupied(){
+        this.slotStatus = Status.OCCUPIED;
+    }
+
+    public void markVacant(){
+        this.slotStatus = Status.VACANT;
     }
 }

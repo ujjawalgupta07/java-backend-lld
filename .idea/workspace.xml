@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="BMS partial impl and Tic Tac Toe complete code">
+    <list default="true" id="5b8cc5d9-e876-4810-95bd-1aa63c4450bc" name="Changes" comment="Impl diagonal winning strategy">
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/enums/SlotAllocationStrategies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/factory/SlotAllocationStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/service/TicketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/winningStrategy/DiagonalWinningStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe/strategy/winningStrategy/DiagonalWinningStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/FarthestSlotAllocationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/FarthestSlotAllocationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/NearestSlotAllocationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/NearestSlotAllocationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/ParkingSlotAllocationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/ParkingSlotAllocationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/RandomSlotAllocationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/Strategies/RandomSlotAllocationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/FloorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/GateController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/ParkingLotController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/TicketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/controller/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Floor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/Floor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingSlot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/models/ParkingSlot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/service/impl/ParkingLotServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LLDCaseStudies/ParkingLot/service/interfaces/ParkingLotService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -34,32 +49,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DesignPatterns.AbstractFactory.DbAbstractFactory.Driver.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DesignPatterns.Builder.Client.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DesignPatterns.Factory.DbFactory.Driver.executor&quot;: &quot;Run&quot;,
-    &quot;Application.DesignPatterns.Strategy.Client.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Driver.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LLDCaseStudies.TicTac.Client.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LLDCaseStudies.TicTacToe.Client.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LambdasClient.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Multithreading.adderSubtractor.Driver.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Multithreading.adderSubtractorWithSynchronised.Driver.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StreamsClient.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ujjagupta/Desktop/Personal/JavaBackendBasics/src/LLDCaseStudies/TicTacToe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Client.executor": "Run",
+    "Application.DesignPatterns.AbstractFactory.DbAbstractFactory.Driver.executor": "Run",
+    "Application.DesignPatterns.Builder.Client.executor": "Run",
+    "Application.DesignPatterns.Factory.DbFactory.Driver.executor": "Run",
+    "Application.DesignPatterns.Strategy.Client.executor": "Run",
+    "Application.Driver.executor": "Run",
+    "Application.LLDCaseStudies.ParkingLot.Client.executor": "Run",
+    "Application.LLDCaseStudies.TicTac.Client.executor": "Run",
+    "Application.LLDCaseStudies.TicTacToe.Client.executor": "Run",
+    "Application.LambdasClient.executor": "Run",
+    "Application.Multithreading.adderSubtractor.Driver.executor": "Run",
+    "Application.Multithreading.adderSubtractorWithSynchronised.Driver.executor": "Run",
+    "Application.StreamsClient.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ujjagupta/Desktop/Personal/JavaBackendBasics/src/LLDCaseStudies/TicTacToe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/LLDCaseStudies/TicTacToe" />
@@ -70,7 +87,7 @@
       <recent name="LLDCaseStudies.TicTac.strategy.winningStrategy" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LLDCaseStudies.TicTacToe.Client">
+  <component name="RunManager" selected="Application.LLDCaseStudies.ParkingLot.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DesignPatterns.Adapter.Client" />
       <module name="JavaBackendBasics" />
@@ -110,6 +127,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LLDCaseStudies.ParkingLot.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LLDCaseStudies.ParkingLot.Client" />
+      <module name="JavaBackendBasics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LLDCaseStudies.ParkingLot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LLDCaseStudies.TicTacToe.Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LLDCaseStudies.TicTacToe.Client" />
       <module name="JavaBackendBasics" />
@@ -138,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LLDCaseStudies.ParkingLot.Client" />
         <item itemvalue="Application.LLDCaseStudies.TicTacToe.Client" />
         <item itemvalue="Application.LLDCaseStudies.TicTacToe.Client" />
         <item itemvalue="Application.DesignPatterns.Strategy.Client" />
         <item itemvalue="Application.Client" />
-        <item itemvalue="Application.DesignPatterns.AbstractFactory.DbAbstractFactory.Driver" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +228,11 @@
       <workItem from="1744615228741" duration="3465000" />
       <workItem from="1744618716219" duration="102000" />
       <workItem from="1744618849257" duration="101000" />
-      <workItem from="1744618997736" duration="4209000" />
+      <workItem from="1744618997736" duration="4710000" />
+      <workItem from="1744631800205" duration="4715000" />
+      <workItem from="1744711920751" duration="162000" />
+      <workItem from="1744712129081" duration="144000" />
+      <workItem from="1744712282737" duration="2121000" />
     </task>
     <task id="LOCAL-00001" summary="Implementing java backend basics&#10;1. Design Patterns Impl&#10;2. Multithreading Impl&#10;3. Lambdas &amp; Streams Impl">
       <option name="closed" value="true" />
@@ -280,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744621812202</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Impl diagonal winning strategy">
+      <option name="closed" value="true" />
+      <created>1744624223893</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1744624223893</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +337,11 @@
     <MESSAGE value="Parking lot basic skeleton code" />
     <MESSAGE value="Extracting some attributes in a baseModel" />
     <MESSAGE value="BMS partial impl and Tic Tac Toe complete code" />
-    <option name="LAST_COMMIT_MESSAGE" value="BMS partial impl and Tic Tac Toe complete code" />
+    <MESSAGE value="Impl diagonal winning strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impl diagonal winning strategy" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

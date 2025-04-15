@@ -1,10 +1,13 @@
 package LLDCaseStudies.ParkingLot.Strategies;
 
-import DesignPatterns.Strategy.SlotAllocationStrategy;
+import LLDCaseStudies.ParkingLot.models.ParkingLot;
+import LLDCaseStudies.ParkingLot.models.ParkingSlot;
+import LLDCaseStudies.ParkingLot.models.Vehicle;
 
-public class RandomSlotAllocationStrategy implements SlotAllocationStrategy {
+public class RandomSlotAllocationStrategy implements ParkingSlotAllocationStrategy {
+
     @Override
-    public int generateSlot() {
-        return 0;
+    public ParkingSlot allocateSlot(ParkingLot parkingLot, Vehicle vehicle) {
+        return null;
     }
 }
